@@ -11,10 +11,6 @@ public class Bicycle {
 		this.lightStatus = lightStatus;
 	}
 
-	public void setGear(int newValue) {
-		gear=newValue;
-	}
-
 	public void applyBrake(int decrement) {
 		speed-=decrement;
 	}
@@ -33,6 +29,10 @@ public class Bicycle {
 
 	public int getGear(){
 		return this.gear;
+	}
+
+	public void setGear(int newValue) {
+		gear=newValue;
 	}
 
 	public boolean getLightStatus(){
